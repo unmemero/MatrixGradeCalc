@@ -17,7 +17,7 @@ function homeworkHandler(){
         }
         hwString = 'hw';
     }
-    document.getElementById('hwTotal').innerHTML = hwTotal;
+    document.getElementById('hwTotal').innerHTML = hwTotal+' / 1500';
     let hwPercent = Math.round((hwTotal*10)/1500);
     document.getElementById('hwPercent').innerHTML = hwPercent + '%';
     return hwPercent;
@@ -32,7 +32,7 @@ function examHandler(){
         }
         examString = 'e';
     }
-    document.getElementById('eTotal').innerHTML = examTotal;
+    document.getElementById('eTotal').innerHTML = examTotal + ' / 177';
     let examPercent = Math.round((examTotal*54)/177);
     document.getElementById('ePercent').innerHTML = examPercent + '%';
     return examPercent;
