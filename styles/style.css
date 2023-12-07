@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: linear-gradient(rgb(0, 0, 62), grey);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-weight: bold;
+  color: rgb(231, 1, 1);
+  background: yellow;
+  padding: 2px;
+  font-size: 1.2em;
+}
+
+.grades {
+  display: flex;
+  gap: 30px;
+}
+.grades .assignments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grades .assignments table tr th, .grades .assignments table tr td {
+  border: solid white 1px;
+  padding: 5px;
+  background: rgb(0, 0, 5);
+  text-align: center;
+}
+.grades .assignments table tr th input, .grades .assignments table tr td input {
+  color: rgb(29, 183, 29);
+  font-weight: bold;
+  background: black;
+  border: solid white 1px;
+  text-align: center;
+}
+.grades .assignments table tr .possible {
+  color: rgb(211, 0, 0);
+  background: yellow;
+  font-weight: bold;
+}
+
+#calculate {
+  width: 200px;
+  height: 50px;
+  background: black;
+  color: green;
+  border: green solid 3px;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+#calculate:hover {
+  border: solid 3px black;
+  color: black;
+  background: green;
+}
+#calculate:active {
+  background: red;
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.totals table tr th, .totals table tr td {
+  border: 1px solid white;
+  background: black;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .grades {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

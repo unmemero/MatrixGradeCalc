@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Algebra calculator</title>
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/algebra-5671052-4751970.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1>Matrix Algebra Grade Calculator Fall 2023</h1>
+    <p>Please fill out all grades before clicking the button</p>
+    <div class="grades">
+        <div class="assignments">
+            <h2>Homework</h2>
+            <table>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <th>Intro to Webwork</th>
+                    <td><input type="text" placeholder="0" id="hw1"></td>
+                </tr>
+                <tr>
+                    <th>Week 1</th>
+                    <td><input type="text" placeholder="0" id="hw2"></td>
+                </tr>
+                <tr>
+                    <th>Week 2</th>
+                    <td><input type="text" placeholder="0" id="hw3"></td>
+                </tr>
+                <tr>
+                    <th>Week 3</th>
+                    <td><input type="text" placeholder="0" id="hw4"></td>
+                </tr>
+                <tr>
+                    <th>Week 4</th>
+                    <td><input type="text" placeholder="0" id="hw5"></td>
+                </tr>
+                <tr>
+                    <th>Week 5</th>
+                    <td><input type="text" placeholder="0" id="hw6"></td>
+                </tr>
+                <tr>
+                    <th>Week 6</th>
+                    <td><input type="text" placeholder="0" id="hw7"></td>
+                </tr>
+                <tr>
+                    <th>Week 7</th>
+                    <td><input type="text" placeholder="0" id="hw8"></td>
+                </tr>
+                <tr>
+                    <th>Week 8</th>
+                    <td><input type="text" placeholder="0" id="hw9"></td>
+                </tr>
+                <tr>
+                    <th>Week 9</th>
+                    <td><input type="text" placeholder="0" id="hw10"></td>
+                </tr>
+                <tr>
+                    <th>Week 10</th>
+                    <td><input type="text" placeholder="0" id="hw11"></td>
+                </tr>
+                <tr>
+                    <th>IWeek 11</th>
+                    <td><input type="text" placeholder="0" id="hw12"></td>
+                </tr>
+                <tr>
+                    <th>Week 12</th>
+                    <td><input type="text" placeholder="0" id="hw13"></td>
+                </tr>
+                <tr>
+                    <th>Week 13</th>
+                    <td><input type="text" placeholder="0" id="hw14"></td>
+                </tr>
+                <tr>
+                    <th>Week 14</th>
+                    <td><input type="text" placeholder="0" id="hw15"></td>
+                </tr>
+                <tr>
+                    <th class="possible">Possible total</th>
+                    <td class="possible">1500</td>
+                </tr>
+                <tr>
+                    <th>Actual total</th>
+                    <td id="hwTotal"></td>
+                </tr>
+                <tr>
+                    <th>Percentage</th>
+                    <td id="hwPercent"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="assignments">
+            <h2>Midterm Exams</h2>
+            <table>
+                <tr>
+                    <th>Exam</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <th>Exam 1</th>
+                    <td><input type="text" placeholder="0" id="e1"></td>
+                </tr>
+                <tr>
+                    <th>Exam 2</th>
+                    <td><input type="text" placeholder="0" id="e2"></td>
+                </tr>
+                <tr>
+                    <th>Exam 3</th>
+                    <td><input type="text" placeholder="0" id="e3"></td>
+                </tr>
+                <tr>
+                    <th class="possible">Possible total</th>
+                    <td class="possible">177</td>
+                </tr>
+                <tr>
+                    <th>Actual Total</th>
+                    <td id="eTotal"></td>
+                </tr>
+                <tr>
+                    <th>Percentage</th>
+                    <td id="ePercent"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="assignments">
+            <h2>Final</h2>
+            <table>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <th>Final Exam</th>
+                    <td><input type="text" placeholder="0" id="f1"></td>
+                </tr>
+                <tr>
+                    <th class="possible">Possible Total</th>
+                    <td class="possible"><!--TODO: PROVIDE TOTAL-->PENDING</td>
+                </tr>
+                <tr>
+                    <th>Percentage</th>
+                    <td id="fPercentage"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button type="submit" id="calculate">Calculate and Export</button>
+    <div class="totals">
+        <h2>TOTALS</h2>
+        <table>
+            <tr>
+                <th>Total Percentage</th>
+                <th>Letter Grade</th>
+            </tr>
+            <tr>
+                <td id="totalPercent"></td>
+                <td id="letterGrade"></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <hr>
+        <div class="copyright">Copyright &copy; Rafael Garcia 2023</div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
